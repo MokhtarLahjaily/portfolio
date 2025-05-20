@@ -1,0 +1,130 @@
+@media screen and (max-width: 1024px) {
+    .hero-content,
+    .about-content,
+    .resume-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-image {
+        order: -1;
+    }
+    
+    .image-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 80px 0;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 120px 0 80px;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    
+    .hero-text h2 {
+        font-size: 20px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+    
+    #navbar {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: var(--transition);
+    }
+    
+    #navbar.active {
+        left: 0;
+    }
+    
+    #navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #navbar ul li {
+        margin: 15px 0;
+    }
+    
+    .menu-btn {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 20px;
+    }
+    
+    .menu-btn.active .menu-btn__burger {
+        background-color: transparent;
+    }
+    
+    .menu-btn.active .menu-btn__burger::before {
+        transform: rotate(45deg);
+    }
+    
+    .menu-btn.active .menu-btn__burger::after {
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    
+    .hero-text h2 {
+        font-size: 18px;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-img {
+        height: 200px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-links {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .social-links a {
+        margin: 0 8px;
+    }
+}
